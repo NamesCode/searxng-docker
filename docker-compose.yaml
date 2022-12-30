@@ -36,7 +36,7 @@ services:
 
   searxng:
     container_name: searxng
-    image: searxng/searxng:latest
+    build: https://github.com/NamesCode/searxng.git
     networks:
       - searxng
     ports:
